@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B31942EA-4340-4168-B17D-F8F372D14D09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{66F727AD-F74F-47C3-8B17-F2B7EBD2ACA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicCard.Identity.Api", "src\PicCard.Identity.Api\PicCard.Identity.Api.csproj", "{4CAA0018-31A7-4558-BAFA-C99460E72C67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4CAA0018-31A7-4558-BAFA-C99460E72C67} = {B31942EA-4340-4168-B17D-F8F372D14D09}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CAA0018-31A7-4558-BAFA-C99460E72C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CAA0018-31A7-4558-BAFA-C99460E72C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CAA0018-31A7-4558-BAFA-C99460E72C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CAA0018-31A7-4558-BAFA-C99460E72C67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
