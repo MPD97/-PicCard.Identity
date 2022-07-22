@@ -25,14 +25,14 @@ app.MapGet("/", () => $"{projectName} - {environment}")
 app.MapGet("/uptime", () =>
     {
         var uptime = DateTime.UtcNow - Process.GetCurrentProcess().StartTime.ToUniversalTime();
-        var uptimeInfo = new UptimeInfo
+        var uptimeInfo = new UptimeInfoResponse
         {
-            TotalYears = (long)(uptime.TotalDays / 365.2425),
-            TotalMonths = (long)(uptime.TotalDays / 12),
-            TotalDays = (long)uptime.TotalDays,
-            TotalHours = (long)uptime.TotalHours,
-            TotalMinutes = (long)uptime.TotalMinutes,
-            TotalSeconds = (long)uptime.TotalSeconds
+            TotalYears = (long) (uptime.TotalDays / 365.2425),
+            TotalMonths = (long) (uptime.TotalDays / 12),
+            TotalDays = (long) uptime.TotalDays,
+            TotalHours = (long) uptime.TotalHours,
+            TotalMinutes = (long) uptime.TotalMinutes,
+            TotalSeconds = (long) uptime.TotalSeconds
         };
         return uptimeInfo;
     })
